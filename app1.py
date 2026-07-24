@@ -116,7 +116,7 @@ colegiados = [
         "reunioes_2026": 3,
         "mandato": "Em dia",
         "vacancia": "Não",
-        "membros": ["Leonardo da Silva Morais (Dir. Adm. Fin.)", "João Marcos Gomes de Pinho"],
+        "membros": ["Luiz Eduardo (DIRIF)", "Andreia (DIRNN)","Carla (PRESI)"],
         "processo": "SEI-150001/005343/2026; SEI-220003/000960/2026; SEI-220003/001074/2026",
         "detalhes": {
             "Natureza": "Órgão executivo responsável pela administração da Companhia",
@@ -127,7 +127,7 @@ colegiados = [
             "Periodicidade": "Ordinariamente, pelo menos uma vez a cada dois meses; extraordinariamente quando necessário",
             "Quorum": "Maioria absoluta (§ 4º, art. 45 ES)",
             "Secretaria Executiva": "Não informado",
-            "Quem lavra a Ata": "Não informado",
+            "Quem lavra a Ata": "Chefe de Gabinete",
             "Atribuições": "Executar as diretrizes do Conselho; administrar a Companhia; elaborar orçamento e plano de negócios; gerir contratos, patrimônio e pessoal; representar a Companhia",
             "Prazos e Formalidades": "Não informado"
         },
