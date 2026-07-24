@@ -65,7 +65,7 @@ colegiados = [
         "ultima_reuniao": "20/07/2026",
         "reunioes_2026": 1,
         "mandato": "N/A",
-        "vacancia": "Não",
+        "vacancia": "Composta por acionistas - não há vacância de membros",
         "membros": ["SECC", "IVB", "CEHAB"],
         "processo": "SEISEI-220003/001002/2026",
         "detalhes": {
@@ -81,7 +81,7 @@ colegiados = [
             "Atribuições": "Alteração do capital social; avaliação de bens; transformação, fusão, incorporação, cisão, dissolução e liquidação; eleição e destituição dos membros do CA e CF; fixação da remuneração; aprovação do relatório anual; alteração do Estatuto Social (AGE).",
             "Prazos e Formalidades": "Convocação: 8 dias (1ª); Quórum: 25% (1ª) / qualquer (2ª); Deliberações: maioria do capital votante"
         },
-        "publicacao": "JUCERJ",
+        "publicacao": "JUCERJA",
         "base_legal": "Lei 6.404/1976; Lei 13.303/2016; art. 8º ES; arts. 37 e 137 da CF"
     },
     {
@@ -90,14 +90,14 @@ colegiados = [
         "ultima_reuniao": "03/07/2026",
         "reunioes_2026": 6,
         "mandato": "VENCIDO (11/12/25)",
-        "vacancia": "Sim / Em andamento",
-        "membros": ["THOMPSON LEMOS SILVA NETO", "ANDERSON CARLOS MATTOS", "JORGE LUIZ TEIXEIRA CAVALCANTE", "LUIZ CLAUDIO ALMEIDA MAGALHÃES"],
-        "processo": "SEISEI-220010/000165/2023",
+        "vacancia": "Sem prazo máximo fixado - substituto designado pelo Presidente do CA (ES, Art 35). Em vacância (Assento SEDEICS vago, processo de indicação em andamento)",
+        "membros": ["Thompson Lemos Silva Neto", "Anderson Carlos Mattos", "Jorge Luiz Teixeira Cavalcante", "Luiz Claudio Almeida Magalhães"],
+        "processo": "SEI-220010/000165/2023",
         "detalhes": {
             "Natureza": "Órgão colegiado de orientação estratégica e supervisão",
             "Composição": "3 membros (1 Presidente: SEDEICS); 2 (1 Vice: SEFAZ); 1 (SEAPPA); 1 minoritário; 1 independente",
             "Convocação": "Pelo Presidente ou por dois conselheiros, com antecedência mínima de 5 dias",
-            "Presidência": "Representante da SEDEICS ou da SECC (inciso I, art. 34 - ES)",
+            "Presidência": "Representante da SEDEICS e vice da SECC (inciso I, art. 34 - ES)",
             "Quem define a pauta": "Presidente do CA, com base nas matérias da ordem do dia",
             "Periodicidade": "Ordinariamente conforme calendário, no mínimo trimestral; extraordinariamente quando necessário",
             "Quorum": "Maioria dos seus membros (art. 39 ES)",
@@ -106,7 +106,7 @@ colegiados = [
             "Atribuições": "Definir diretrizes estratégicas; eleger e destituir a Diretoria Executiva; fiscalizar a gestão; aprovar políticas, plano de negócios, orçamento, gestão de riscos, auditoria, regimentos e matérias patrimoniais relevantes",
             "Prazos e Formalidades": "Convocação: 5 dias por escrito; Periodicidade mínima: trimestral; Quórum: maioria; Deliberações: maioria de votos (voto de qualidade do Presidente em caso de empate - ES, Art. 20, Par. 3°)"
         },
-        "publicacao": "JUCERJ",
+        "publicacao": "JUCERJA",
         "base_legal": "Lei 6.404/1976; Lei 13.303/2016; art. 33º ES; arts. 37 e 137 da CF"
     },
     {
@@ -115,7 +115,7 @@ colegiados = [
         "ultima_reuniao": "07/07/2026",
         "reunioes_2026": 3,
         "mandato": "Em dia",
-        "vacancia": "Não",
+        "vacancia": "Em caso de vacância, Diretor-Presidente designa substituto imediatamente entre os demais diretores (ES, Art. 44). Sem vacância.",
         "membros": ["Luiz Eduardo (DIRIF)", "Andreia (DIRNN)","Carla (PRESI)"],
         "processo": "SEI-150001/005343/2026; SEI-220003/000960/2026; SEI-220003/001074/2026",
         "detalhes": {
@@ -131,7 +131,7 @@ colegiados = [
             "Atribuições": "Executar as diretrizes do Conselho; administrar a Companhia; elaborar orçamento e plano de negócios; gerir contratos, patrimônio e pessoal; representar a Companhia",
             "Prazos e Formalidades": "Não informado"
         },
-        "publicacao": "Não informado",
+        "publicacao": "JUCERJA",
         "base_legal": "Lei 6.404/1976; Lei 13.303/2016; art. 41º Estatuto Social"
     },
     {
@@ -140,7 +140,7 @@ colegiados = [
         "ultima_reuniao": "25/06/2026",
         "reunioes_2026": 7,
         "mandato": "VENCIDO (11/12/25)",
-        "vacancia": "Sim (SEDEICS vago)",
+        "vacancia": "Em caso de vacância com suplente, este assume imediatamente até eleição do novo titular em AG (ES, Art. 56,§ único. Em vacância (Assento SEDEICS vago - processo de indicação em andamento)",
         "membros": ["Gabriel Mac-Dowell Blum (Presidente)", "Francisco Pereira Iglesias", "VAGO (SEDEICS)"],
         "processo": "SEISEI-220010/000165/2023",
         "detalhes": {
@@ -156,7 +156,7 @@ colegiados = [
             "Atribuições": "Fiscalizar os atos da administração; examinar demonstrações financeiras; opinar sobre matérias societárias relevantes; comunicar irregularidades",
             "Prazos e Formalidades": "Periodicidade ordinária: mensal; Quórum: maioria; Análise financeira: trimestral; Mandato: 2 anos (máx. 2 reconduções); Remuneração: fixada pela AG (< 15% da média mensal da Diretoria)"
         },
-        "publicacao": "JUCERJ",
+        "publicacao": "JUCERJA",
         "base_legal": "Lei 6.404/1976; Lei 13.303/2016; Decreto Estadual 45.188/2017; art. 33º ES; arts. 37 e 137 da CF. Aplica-se subsidiariamente a Lei 6.404/76 e Dec. Est. 46.188/2017"
     },
     {
@@ -165,7 +165,7 @@ colegiados = [
         "ultima_reuniao": "Não realizada",
         "reunioes_2026": 0,
         "mandato": "Sem dados",
-        "vacancia": "N/A",
+        "vacancia": "Em caso de vacância, CA elege substituto em até 30 dias (RI, Art. 10). Em vacância.",
         "membros": ["3 independentes (não informado)"],
         "processo": "Não informado",
         "detalhes": {
@@ -190,7 +190,7 @@ colegiados = [
         "ultima_reuniao": "20/05/2026",
         "reunioes_2026": 6,
         "mandato": "Em dia",
-        "vacancia": "Eleição por revogação",
+        "vacancia": "Sem prazo previsto - renovação por revogação de Portaria. Sem vacância.",
         "membros": ["Carla Amanda de Souza Carneiro", "Carla Pereira", "Maria Izete de Oliveira"],
         "processo": "SEISEI-220010/000297/2022",
         "detalhes": {
