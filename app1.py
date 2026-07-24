@@ -67,7 +67,7 @@ colegiados = [
         "mandato": "N/A",
         "vacancia": "Composta por acionistas - não há vacância de membros",
         "membros": ["SECC", "IVB", "CEHAB"],
-        "processo": "SEISEI-220003/001002/2026",
+        "processo": "SEI-220010/000165/2023",
         "detalhes": {
             "Natureza": "Órgão máximo de deliberação da Companhia; decisões de competência dos acionistas (ES, Art. 33)",
             "Composição": "Acionistas com direito a voto; trabalhos conduzidos pelo Diretor-Presidente ou substituto",
@@ -142,7 +142,7 @@ colegiados = [
         "mandato": "VENCIDO (11/12/25)",
         "vacancia": "Em caso de vacância com suplente, este assume imediatamente até eleição do novo titular em AG (ES, Art. 56,§ único. Em vacância (Assento SEDEICS vago - processo de indicação em andamento)",
         "membros": ["Gabriel Mac-Dowell Blum (Presidente)", "Francisco Pereira Iglesias", "VAGO (SEDEICS)"],
-        "processo": "SEISEI-220010/000165/2023",
+        "processo": "SEI-220010/000165/2023",
         "detalhes": {
             "Natureza": "Órgão permanente de fiscalização",
             "Composição": "2 efetivos + suplentes (1 da SEFAZ); 1 efetivo + suplente (SEDEICS); 1 efetivo + suplente (acionistas minoritários)",
@@ -192,7 +192,7 @@ colegiados = [
         "mandato": "Em dia",
         "vacancia": "Sem prazo previsto - renovação por revogação de Portaria. Sem vacância.",
         "membros": ["Carla Amanda de Souza Carneiro", "Carla Pereira", "Maria Izete de Oliveira"],
-        "processo": "SEISEI-220010/000297/2022",
+        "processo": "SEI-220010/000297/2022",
         "detalhes": {
             "Natureza": "Órgão de assessoramento responsável pela análise de elegibilidade",
             "Composição": "Três membros, preferencialmente do Comitê de Auditoria, empregados ou conselheiros",
