@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Configuração da página
-st.set_page_config(page_title="Painel CODIN", layout="wide", page_icon="📊")
+st.set_page_config(page_title="Painel CODIN", layout="wide", page_icon="")
 
 # --- CSS customizado para os cartões de KPI e status ---
 st.markdown("""
@@ -224,7 +224,7 @@ def get_status_class(status):
     return "status-regular"
 
 # --- Cabeçalho ---
-st.title("📊 Painel de Governança - CODIN")
+st.title("Painel Executivo de Colegiados da Companhia - CODIN")
 st.caption("Base: 24/07/2026")
 st.markdown("---")
 
@@ -262,7 +262,7 @@ with cols[3]:
 st.markdown("---")
 
 # --- Detalhamento dos Colegiados ---
-st.subheader("📋 Detalhamento dos Colegiados")
+st.subheader("Detalhamento dos Colegiados")
 
 for org in colegiados:
     status_color = get_status_class(org['status'])
@@ -287,7 +287,7 @@ for org in colegiados:
         
         with col2:
             # Detalhes expandíveis
-            with st.expander("📌 Ver detalhes completos"):
+            with st.expander("Ver detalhes completos"):
                 # Informações gerais
                 if org['processo']:
                     st.markdown(f"**Processo SEI:** {org['processo']}")
