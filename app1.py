@@ -141,7 +141,7 @@ colegiados = [
         "reunioes_2026": 7,
         "mandato": "VENCIDO (11/12/25)",
         "vacancia": "Sim (SEDEICS vago)",
-        "membros": ["Gabriel Mac-Dowell Blum (Presidente)", "Francisco Pereira Iglesias", "Reginaldo Jardim", "VAGO (SEDEICS)"],
+        "membros": ["Gabriel Mac-Dowell Blum (Presidente)", "Francisco Pereira Iglesias", "VAGO (SEDEICS)"],
         "processo": "SEISEI-220010/000165/2023",
         "detalhes": {
             "Natureza": "Órgão permanente de fiscalização",
