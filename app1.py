@@ -67,7 +67,7 @@ colegiados = [
         "mandato": "N/A",
         "vacancia": "Composta por acionistas - não há vacância de membros",
         "membros": ["SECC", "IVB", "CEHAB"],
-        "processo": "SEI-220010/000165/2023",
+        "processo": "SEI-220003/001002/2026",
         "detalhes": {
             "Natureza": "Órgão máximo de deliberação da Companhia; decisões de competência dos acionistas (ES, Art. 33)",
             "Composição": "Acionistas com direito a voto; trabalhos conduzidos pelo Diretor-Presidente ou substituto",
