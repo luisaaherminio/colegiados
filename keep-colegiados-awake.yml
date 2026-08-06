@@ -1,0 +1,26 @@
+name: Manter Streamlit ativo
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  manter-ativo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Acessar o aplicativo Streamlit
+        run: |
+          STREAMLIT_COOKIE_FILE=$(mktemp)
+
+          curl --fail --silent --show-error --location \
+            --cookie "$STREAMLIT_COOKIE_FILE" \
+            --cookie-jar "$STREAMLIT_COOKIE_FILE" \
+            --retry 3 --retry-delay 10 --max-time 60 \
+            "https://colegiados-codin.streamlit.app/" \
+            > /dev/null
