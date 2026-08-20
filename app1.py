@@ -87,8 +87,8 @@ colegiados = [
     {
         "nome": "Conselho de Administração",
         "status": "CRÍTICO",
-        "ultima_reuniao": "03/07/2026",
-        "reunioes_2026": 6,
+        "ultima_reuniao": "20/08/2026",
+        "reunioes_2026": 7,
         "mandato": "VENCIDO (11/12/25)",
         "vacancia": "Sem prazo máximo fixado - substituto designado pelo Presidente do CA (ES, Art 35). Em vacância (Assento SEDEICS vago, processo de indicação em andamento)",
         "membros": ["Thompson Lemos Silva Neto", "Anderson Carlos Mattos", "Jorge Luiz Teixeira Cavalcante", "Luiz Claudio Almeida Magalhães"],
@@ -112,8 +112,8 @@ colegiados = [
     {
         "nome": "Diretoria Executiva",
         "status": "Regular",
-        "ultima_reuniao": "07/07/2026",
-        "reunioes_2026": 3,
+        "ultima_reuniao": "31/07/2026",
+        "reunioes_2026": 4,
         "mandato": "Em dia",
         "vacancia": "Em caso de vacância, Diretor-Presidente designa substituto imediatamente entre os demais diretores (ES, Art. 44). Sem vacância.",
         "membros": ["Luiz Eduardo (DIRIF)", "Andreia (DIRNN)","Carla (PRESI)"],
