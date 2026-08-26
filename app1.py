@@ -137,8 +137,8 @@ colegiados = [
     {
         "nome": "Conselho Fiscal",
         "status": "CRÍTICO",
-        "ultima_reuniao": "25/06/2026",
-        "reunioes_2026": 7,
+        "ultima_reuniao": "26/08/2026",
+        "reunioes_2026": 8,
         "mandato": "VENCIDO (11/12/25)",
         "vacancia": "Em caso de vacância com suplente, este assume imediatamente até eleição do novo titular em AG (ES, Art. 56,§ único. Em vacância (Assento SEDEICS vago - processo de indicação em andamento)",
         "membros": ["Gabriel Mac-Dowell Blum (Presidente)", "Francisco Pereira Iglesias", "Vago (SEDEICS)"],
