@@ -4,10 +4,6 @@ import pandas as pd
 # Configuração da página
 st.set_page_config(page_title="Painel CODIN", layout="wide", page_icon="")
 
-# Inicializar estado do filtro
-if 'filtro' not in st.session_state:
-    st.session_state.filtro = 'todos'
-
 # --- CSS customizado para os cartões de KPI e status ---
 st.markdown("""
 <style>
@@ -49,37 +45,6 @@ st.markdown("""
     .status-regular { background-color: #bbf7d0; color: #14532d; border: 1px solid #22c55e; }
     .status-ativo   { background-color: #bfdbfe; color: #1e3a8a; border: 1px solid #3b82f6; }
     .status-inativo { background-color: #e5e7eb; color: #374151; border: 1px solid #9ca3af; }
-    /* Estilo para os botões de KPI */
-    div.stButton > button {
-        background-color: #f0f2f6 !important;
-        border: none !important;
-        border-left: 8px solid #1E3A8A !important;
-        border-radius: 10px !important;
-        padding: 15px !important;
-        font-size: 2.5rem !important;
-        font-weight: bold !important;
-        color: #1E3A8A !important;
-        text-align: center !important;
-        width: 100% !important;
-        height: auto !important;
-        line-height: 1.2 !important;
-        transition: all 0.2s;
-    }
-    div.stButton > button:hover {
-        background-color: #e0e4ed !important;
-        border-left-color: #DC2626 !important;
-    }
-    div.stButton > button:active {
-        transform: scale(0.98);
-    }
-    .kpi-label-botao {
-        text-align: center;
-        margin-top: -5px;
-        font-size: 0.9rem;
-        color: #555;
-        font-weight: 500;
-        padding-bottom: 5px;
-    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -258,60 +223,48 @@ def get_status_class(status):
         return "status-inativo"
     return "status-regular"
 
-# --- Lógica de filtro ---
-def aplicar_filtro(org, filtro):
-    if filtro == 'todos':
-        return True
-    if filtro == 'vencidos':
-        return 'VENCIDO' in org['mandato'].upper()
-    if filtro == 'vacancias':
-        texto = org['vacancia'].lower()
-        return ('em vacância' in texto or 'vago' in texto) and ('não há' not in texto and 'sem vacância' not in texto)
-    return True
-
 # --- Cabeçalho ---
 st.title("Painel Executivo de Colegiados da Companhia - CODIN")
 st.caption("Base: 27/08/2026")
 st.markdown("---")
 
-# --- KPIs Globais (clicáveis) ---
-col_botoes = st.columns(4)
-with col_botoes[0]:
-    if st.button(f"📊 {kpis['Total Reuniões (2026)']}", key="btn_todos", use_container_width=True):
-        st.session_state.filtro = 'todos'
-    st.markdown('<div class="kpi-label-botao">Total Reuniões (2026)</div>', unsafe_allow_html=True)
-
-with col_botoes[1]:
-    if st.button(f"⚠️ {kpis['Mandatos Vencidos']}", key="btn_vencidos", use_container_width=True):
-        st.session_state.filtro = 'vencidos'
-    st.markdown('<div class="kpi-label-botao">Mandatos Vencidos</div>', unsafe_allow_html=True)
-
-with col_botoes[2]:
-    if st.button(f"🔄 {kpis['Vacâncias']}", key="btn_vacancias", use_container_width=True):
-        st.session_state.filtro = 'vacancias'
-    st.markdown('<div class="kpi-label-botao">Vacâncias</div>', unsafe_allow_html=True)
-
-with col_botoes[3]:
+# --- KPIs Globais ---
+cols = st.columns(4)
+with cols[0]:
     st.markdown(f"""
-    <div style="background-color:#f0f2f6; padding:15px; border-radius:10px; border-left:8px solid #1E3A8A; text-align:center;">
-        <div style="font-size:2.5rem; font-weight:bold; color:#1E3A8A; margin:0;">{kpis['Nomeações em Andamento']}</div>
-        <div style="font-size:0.9rem; color:#555; font-weight:500;">Nomeações em Andamento</div>
+    <div class="kpi-card kpi-card-blue">
+        <div class="kpi-number">{kpis['Total Reuniões (2026)']}</div>
+        <div class="kpi-label">Total Reuniões (2026)</div>
+    </div>
+    """, unsafe_allow_html=True)
+with cols[1]:
+    st.markdown(f"""
+    <div class="kpi-card kpi-card-red">
+        <div class="kpi-number">{kpis['Mandatos Vencidos']}</div>
+        <div class="kpi-label">Mandatos Vencidos</div>
+    </div>
+    """, unsafe_allow_html=True)
+with cols[2]:
+    st.markdown(f"""
+    <div class="kpi-card kpi-card-red">
+        <div class="kpi-number">{kpis['Vacâncias']}</div>
+        <div class="kpi-label">Vacâncias</div>
+    </div>
+    """, unsafe_allow_html=True)
+with cols[3]:
+    st.markdown(f"""
+    <div class="kpi-card kpi-card-blue">
+        <div class="kpi-number">{kpis['Nomeações em Andamento']}</div>
+        <div class="kpi-label">Nomeações em Andamento</div>
     </div>
     """, unsafe_allow_html=True)
 
 st.markdown("---")
 
-# --- Detalhamento dos Colegiados (filtrado) ---
+# --- Detalhamento dos Colegiados ---
 st.subheader("Detalhamento dos Colegiados")
 
-# Aplica o filtro
-colegiados_filtrados = [org for org in colegiados if aplicar_filtro(org, st.session_state.filtro)]
-
-# Exibe mensagem se nenhum resultado
-if not colegiados_filtrados:
-    st.info("Nenhum colegiado encontrado com o filtro selecionado.")
-
-for org in colegiados_filtrados:
+for org in colegiados:
     status_color = get_status_class(org['status'])
     
     # Card principal
@@ -335,6 +288,7 @@ for org in colegiados_filtrados:
         with col2:
             # Detalhes expandíveis
             with st.expander("Ver detalhes completos"):
+                # Informações gerais
                 if org['processo']:
                     st.markdown(f"**Processo SEI:** {org['processo']}")
                 if org['publicacao']:
@@ -344,6 +298,7 @@ for org in colegiados_filtrados:
                 
                 st.markdown("---")
                 
+                # Detalhes específicos do órgão
                 for key, value in org['detalhes'].items():
                     st.markdown(f"**{key}:**")
                     st.markdown(f"{value}")
