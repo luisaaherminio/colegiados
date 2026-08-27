@@ -225,7 +225,7 @@ def get_status_class(status):
 
 # --- Cabeçalho ---
 st.title("Painel Executivo de Colegiados da Companhia - CODIN")
-st.caption("Base: 24/07/2026")
+st.caption("Base: 27/08/2026")
 st.markdown("---")
 
 # --- KPIs Globais ---
