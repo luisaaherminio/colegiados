@@ -116,7 +116,7 @@ colegiados = [
         "reunioes_2026": 4,
         "mandato": "Em dia",
         "vacancia": "Em caso de vacância, Diretor-Presidente designa substituto imediatamente entre os demais diretores (ES, Art. 44). Sem vacância.",
-        "membros": ["Luiz Eduardo (DIRIF)", "Andreia (DIRNN)","Carla (PRESI)"],
+        "membros": ["Luiz Eduardo (DIRIF)", "Andreia (DIRNN)"],
         "processo": "SEI-150001/005343/2026; SEI-220003/000960/2026; SEI-220003/001074/2026",
         "detalhes": {
             "Natureza": "Órgão executivo responsável pela administração da Companhia",
