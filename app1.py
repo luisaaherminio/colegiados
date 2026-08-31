@@ -51,7 +51,7 @@ st.markdown("""
 # --- Dados extraídos do PDF ---
 # KPI Globais
 kpis = {
-    "Total Reuniões (2026)": 23,
+    "Total Reuniões (2026)": 27,
     "Mandatos Vencidos": 2,
     "Vacâncias": 2,
     "Nomeações em Andamento": 2
