@@ -191,7 +191,7 @@ colegiados = [
         "reunioes_2026": 6,
         "mandato": "Em dia",
         "vacancia": "Sem prazo previsto - renovação por revogação de Portaria. Sem vacância.",
-        "membros": ["Carla Amanda de Souza Carneiro", "Carla Pereira", "Maria Izete de Oliveira"],
+        "membros": ["Hanna Nathani de Souza Pereira", "Carla Roberta Pereira", "Maria Izete de Oliveira"],
         "processo": "SEI-220010/000297/2022",
         "detalhes": {
             "Natureza": "Órgão de assessoramento responsável pela análise de elegibilidade",
