@@ -87,8 +87,8 @@ colegiados = [
     {
         "nome": "Conselho de Administração",
         "status": "CRÍTICO",
-        "ultima_reuniao": "20/08/2026",
-        "reunioes_2026": 7,
+        "ultima_reuniao": "31/08/2026",
+        "reunioes_2026": 8,
         "mandato": "VENCIDO (11/12/25)",
         "vacancia": "Sem prazo máximo fixado - substituto designado pelo Presidente do CA (ES, Art 35). Em vacância (Assento SEDES vago, processo de indicação em andamento)",
         "membros": ["Thompson Lemos Silva Neto", "Anderson Carlos Mattos", "Jorge Luiz Teixeira Cavalcante", "Luiz Claudio Almeida Magalhães"],
